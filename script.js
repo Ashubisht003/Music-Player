@@ -1,5 +1,3 @@
-console.log("Welcome to Journey");
-
 //Initialize
 let songIndex=0;
 let audioElement=new Audio('./songs/sunflower.mp3');
@@ -23,10 +21,17 @@ songItem.forEach((element,i)=>{
     element.getElementsByClassName('songName')[0].innerText=songs[i].songName;
 })
 
-// Function to update background image
-function updateBackgroundImage(songIndex) {
-    const backgroundImageElement = document.querySelector('.container');
-    backgroundImageElement.style.backgroundImage = `url(${songs[songIndex].coverpath})`;
+function updateSongTimer(currentTime, totalDuration) {
+    const currentMinutes = Math.floor(currentTime / 60);
+    const currentSeconds = Math.floor(currentTime % 60);
+    const totalMinutes = Math.floor(totalDuration / 60);
+    const totalSeconds = Math.floor(totalDuration % 60);
+
+    const formattedCurrentTime = `${currentMinutes}:${currentSeconds < 10 ? '0' : ''}${currentSeconds}`;
+    const formattedTotalDuration = `${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
+
+    document.getElementById('songTimer').textContent = formattedCurrentTime;
+    document.getElementById('songDuration').textContent = formattedTotalDuration;
 }
 
 //Handle play/pause
@@ -36,7 +41,6 @@ masterPlay.addEventListener('click',()=>{
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
         gif.style.opacity=1;
-        updateBackgroundImage(songIndex); // Update background when playing
     }
     else{
         audioElement.pause();
@@ -50,6 +54,9 @@ audioElement.addEventListener('timeupdate', ()=>{
     //Update Seekbar
     progress=parseInt((audioElement.currentTime/audioElement.duration)*100);
     progressBar.value=progress;
+
+     // Update the song timer with both current time and total duration
+     updateSongTimer(audioElement.currentTime, audioElement.duration);
 })
 
 progressBar.addEventListener('change',()=>{
