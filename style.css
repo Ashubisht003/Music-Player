@@ -49,7 +49,7 @@ nav ul li{
     margin: 20px auto;
     border-radius: 12px;
     padding: 34px;
-    background-image: url(./covers/1.jpg); /* Set a default image path */
+    background-image: url(./covers/1.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -74,6 +74,22 @@ nav ul li{
     cursor: pointer;
 }
 
+/* Style for the current duration (left) */
+#songTimer {
+    position: absolute;
+    left: 110px; 
+    bottom: 65px;
+    display: inline-block;
+}
+
+/* Style for the total duration (right) */
+#songDuration {
+    position: absolute;
+    right: 110px;
+    bottom: 65px; 
+    display: inline-block;
+}
+
 #progressBar{
     width: 80vw;
     text-align: center;
@@ -81,18 +97,18 @@ nav ul li{
     width: 80vw;
     text-align: center;
     cursor: pointer;
-    height: 10px; /* Set the height of the progress bar */
-    background-color: #ccc; /* Background color of the progress bar */
-    border-radius: 5px; /* Rounded corners */
+    height: 10px; 
+    background-color: #ccc; 
+    border-radius: 5px;
 }
 
 #progressBar::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 10px; /* Width of the slider thumb */
-    height: 20px; /* Height of the slider thumb */
-    background-color: #007bff; /* Color of the slider thumb */
-    border-radius: 50%; /* Rounded shape */
+    width: 10px; 
+    height: 20px; 
+    background-color: #007bff; 
+    border-radius: 50%; 
     cursor: pointer;
 }
 
@@ -147,12 +163,10 @@ nav ul li{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        /* Adjust background color for smaller screens */
         background-color: lightblue;
     }
 
     nav ul {
-        /* Adjust the navigation bar styles for smaller screens */
         height: auto;
         flex-direction: column;
     }
@@ -162,14 +176,12 @@ nav ul li{
     }
 
     .container {
-        /* Adjust container styles for smaller screens */
-        width: 85%; /* You can adjust this as needed */
+        width: 85%; 
         margin: 10px auto;
         padding: 20px;
     }
 
     .bottom {
-        /* Adjust styles for the bottom section on smaller screens */
         height: 110px;
         padding: 10px;
         justify-content: flex-start;
@@ -185,22 +197,3 @@ nav ul li{
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* Your CSS rules here */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    /* Your CSS rules here */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    /* Your CSS rules here */
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    /* Your CSS rules here */
-}
