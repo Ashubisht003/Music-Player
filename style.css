@@ -144,6 +144,7 @@ nav ul li {
 @media only screen and (max-width: 768px) {
     body {
         background-color: lightblue;
+        scroll-behavior: smooth;
     }
 
     nav ul {
@@ -156,11 +157,9 @@ nav ul li {
     }
 
     .container {
-        display:flex;
         width: 85%;
         margin: 10px auto;
         padding: 20px;
-        flex:1;
     }
 
     .bottom {
