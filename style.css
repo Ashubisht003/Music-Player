@@ -166,6 +166,7 @@ nav ul li {
         padding: 10px;
         justify-content: flex-start;
         bottom: 0;
+        position:fixed;
     }
 
     .songInfo {
