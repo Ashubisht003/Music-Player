@@ -40,7 +40,6 @@ nav ul li {
 }
 
 .container {
-    width: 80%;
     min-height: 65vh;
     background-color: #9EB384;
     color: white;
@@ -65,7 +64,6 @@ nav ul li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Mooli', sans-serif;
 }
 
 .icons {
@@ -141,10 +139,10 @@ nav ul li {
     transition: opacity 0.3s ease-in;
 }
 
-@media only screen and (max-width: 768px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
-        scroll-behavior: smooth;
     }
 
     nav ul {
@@ -157,33 +155,23 @@ nav ul li {
     }
 
     .container {
-        min-height: 85vh;
-        width: 100%; /* Change to 100% to take full width on mobile devices */
-        margin: 0; /* Remove margin */
-        padding: 0px;
+        width: 85%;
+        margin: 10px auto;
+        padding: 20px;
     }
 
     .bottom {
-        width: 100%;
+        height: 135px;
         padding: 10px;
-        left: 0;
+        justify-content: flex-start;
     }
 
     .songInfo {
-        bottom: 15px;
-        left: 2px; /* Adjust left positioning */
+        bottom: 20px;
+        left: 108px;
     }
 
     .songItem {
         font-size: 0.8rem;
     }
-
-    #songTimer {
-        left: 15px; /* Adjust left positioning */
-    }
-
-    #songDuration {
-        right: 35px; /* Adjust right positioning */
-    }
-
 }
