@@ -165,11 +165,12 @@ nav ul li {
         height: 110px;
         padding: 10px;
         justify-content: flex-start;
+        bottom: 0;
     }
 
     .songInfo {
-        bottom: 20px;
-        left: 110px;
+        bottom: 15px;
+        left: 105px;
     }
 
     .songItem {
@@ -182,5 +183,10 @@ nav ul li {
 
     #songDuration{
         right: 76px;
+    }
+
+    .songInfo img{
+        left: 76px;
+        bottom: 15px;
     }
 }
