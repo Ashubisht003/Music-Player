@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mooli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Titillium+Web&display=swap');
 
-body{
+body {
     background-color: #FAF1E4;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     font-family: 'Mooli', sans-serif;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -23,38 +23,38 @@ nav ul{
     color: white;
 }
 
-nav ul li{
+nav ul li {
     padding: 0 12px;
 }
 
-.brand img{
+.brand img {
     width: 70px;
     padding: 0 8px;
 }
 
-.brand{
+.brand {
     display: flex;
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
 }
 
-.container{
+.container {
     min-height: 65vh;
     background-color: #9EB384;
     color: white;
     font-family: 'Titillium Web', sans-serif;
-    display:flex;
+    display: flex;
     width: 70%;
     margin: 20px auto;
     border-radius: 12px;
     padding: 34px;
-    background-image: url(./covers/1.jpg); 
+    background-image: url(./covers/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.bottom{
+.bottom {
     position: sticky;
     height: 89px;
     background-color: #9EB384;
@@ -64,20 +64,21 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Mooli', sans-serif;
 }
 
-.icons{
+.icons {
     margin-top: 16px;
 }
 
-.icons i{
+.icons i {
     cursor: pointer;
 }
 
 /* Style for the current duration (left) */
 #songTimer {
     position: absolute;
-    left: 110px; 
+    left: 110px;
     bottom: 65px;
     display: inline-block;
 }
@@ -86,45 +87,24 @@ nav ul li{
 #songDuration {
     position: absolute;
     right: 110px;
-    bottom: 65px; 
+    bottom: 65px;
     display: inline-block;
 }
 
-#progressBar{
+#progressBar {
     width: 80vw;
     text-align: center;
     cursor: pointer;
-    width: 80vw;
-    text-align: center;
-    cursor: pointer;
-    height: 10px; 
-    background-color: #ccc; 
+    height: 10px;
+    background-color: #ccc;
     border-radius: 5px;
 }
 
-#progressBar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 10px; 
-    height: 20px; 
-    background-color: #007bff; 
-    border-radius: 50%; 
-    cursor: pointer;
-}
-
-#progressBar::-moz-range-thumb {
-    width: 10px;
-    height: 20px;
-    background-color: #007bff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.songItemContainer{
+.songItemContainer {
     margin-top: 42px;
 }
 
-.songItem{
+.songItem {
     height: 50px;
     display: flex;
     background-color: white;
@@ -135,27 +115,27 @@ nav ul li{
     border-radius: 34px;
 }
 
-.songItem img{
+.songItem img {
     width: 40px;
     margin: 0 23px;
     border-radius: 35px;
 }
 
-.timeStamp{
+.timeStamp {
     margin: 0 20px;
 }
 
-.timeStamp i{
+.timeStamp i {
     cursor: pointer;
 }
 
-.songInfo{
+.songInfo {
     position: absolute;
     left: 10vw;
     font-family: 'Mooli', sans-serif;
 }
 
-.songInfo img{
+.songInfo img {
     opacity: 0;
     transition: opacity 0.3s ease-in;
 }
@@ -176,7 +156,7 @@ nav ul li{
     }
 
     .container {
-        width: 85%; 
+        width: 85%;
         margin: 10px auto;
         padding: 20px;
     }
@@ -187,13 +167,12 @@ nav ul li{
         justify-content: flex-start;
     }
 
-    .songInfo{
+    .songInfo {
         bottom: 20px;
-        left: 108px;
+        left: 150px;
     }
 
-    .songItem{
+    .songItem {
         font-size: 0.8rem;
     }
 }
-
