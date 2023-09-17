@@ -169,10 +169,18 @@ nav ul li {
 
     .songInfo {
         bottom: 20px;
-        left: 150px;
+        left: 110px;
     }
 
     .songItem {
         font-size: 0.8rem;
+    }
+
+    #songTimer{
+        left: 76px;
+    }
+
+    #songDuration{
+        right: 76px;
     }
 }
