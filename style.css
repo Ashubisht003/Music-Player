@@ -174,4 +174,12 @@ nav ul li {
     .songItem {
         font-size: 0.8rem;
     }
+
+     #songTimer{
+        left: 75px;
+    }
+
+    #songDuration{
+        right: 80px;
+    }
 }
