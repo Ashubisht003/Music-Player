@@ -163,10 +163,11 @@ nav ul li {
     }
 
     .bottom {
-        position: fixed; 
-        width: 100%; 
-        padding: 10px; 
+        position: fixed;
+        width: 100%;
+        padding: 10px;
         left: 0;
+        bottom: 0; /* Add this to ensure it sticks to the bottom */
     }
 
     .songInfo {
@@ -191,3 +192,4 @@ nav ul li {
         bottom: 15px;
     }
 }
+
